@@ -1,6 +1,7 @@
 import java.util.Scanner;
-
+//Esta es otra posible solución al problema 4 de Java
 class daysMonth2 {
+
 
     final static int ENERO = 1;
     final static int FEBRERO = 2;
@@ -20,19 +21,18 @@ class daysMonth2 {
         Scanner input = new Scanner(System.in);
         System.out.println("Cual es el mes (Num Mes)? ");
         int mes = input.nextInt();
-
         if (mes > 12){
             System.out.println("El mes no puede ser mayor a 12");
         }else{
              System.out.println("Cual es el anio (num Anio)? ");
             int anio= input.nextInt();
 
-            System.out.println("El mes tiene: " + cuantosDias(mes, anio)+ " dias");
+            System.out.println("El mes tiene: " + cuantosDias(mes, anio)+ " dias");//ejecuto e imprimo el resultado
         }
 
        
     }
-
+    //Con este método vamos a calcular los días que tiene el mes.
     public static int cuantosDias(int mes, int anio){
         int dias=0;
        /* String meses[];
@@ -87,7 +87,7 @@ class daysMonth2 {
         return dias;
 
     }
-
+    //Este método me hará saber si el año es bisiesto para traer la respuesta correcta.
     public static boolean esBisiesto(int anio){
         boolean flag = false;
         if (anio % 400 == 0) {
